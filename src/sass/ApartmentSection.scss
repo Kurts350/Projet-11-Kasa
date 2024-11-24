@@ -1,0 +1,15 @@
+.grid {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  background: #F6F6F6;
+  border-radius: 2rem;
+  gap: 1rem;
+  padding: 2rem;
+
+  @media screen and (max-width: 768px) {
+  justify-content: center;    
+  background-color: white;
+  padding: 0;
+  }
+}

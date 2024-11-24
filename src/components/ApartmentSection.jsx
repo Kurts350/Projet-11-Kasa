@@ -1,7 +1,7 @@
 import React from 'react'
-import '../sass/ApartmentGrid.scss'
+import '../sass/ApartmentSection.scss'
 import Apartment from './Apartment.jsx'
-function ApartmentGrid() {
+function ApartmentSection() {
   return (
     <div className='grid'>
       <Apartment />
@@ -12,4 +12,4 @@ function ApartmentGrid() {
   )
 }
 
-export default ApartmentGrid
+export default ApartmentSection
