@@ -12,6 +12,11 @@
   background-image: linear-gradient(to top, #cc4e4e, #ff6060);
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 
+  a { 
+    text-decoration: none;
+    color: #000;
+  }
+
   @media screen and (max-width: 768px) {
     flex-basis: 100%;
     margin-bottom: 1rem;
