@@ -5,6 +5,7 @@ import Footer from "../layout/Footer";
 import Main from "../layout/Main";
 import HomePage from "../pages/HomePage";
 import ApartmentPage from '../pages/ApartmentPage';
+import About from '../pages/About'; 
 
 const Layout = () => {
   return (
@@ -33,7 +34,7 @@ const router = createBrowserRouter([
       },
       {
         path: "/about",
-        element: <h1>A propos</h1>,
+        element: <About/>
       },
     ],
   },

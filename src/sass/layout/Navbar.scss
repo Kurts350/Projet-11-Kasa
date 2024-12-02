@@ -10,6 +10,9 @@
   gap: 2rem;
   margin-bottom: 2em;
   margin-top: 2em;
+  @media screen and (max-width: 768px) {
+    text-transform: uppercase;    
+  }
 
   & > *:first-child {
     margin-right: auto;
@@ -31,7 +34,7 @@
     }
   }
 
-  @media screen and (max-width: 442px) {
+  @media screen and (max-width: 768px) {
     flex-wrap: wrap;
     &__logo {
       width: 100%;
