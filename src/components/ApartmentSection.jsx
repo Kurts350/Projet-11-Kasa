@@ -1,5 +1,5 @@
 import React from 'react'
-import '../sass/ApartmentSection.scss'
+import '../sass/components/ApartmentSection.scss'
 import Apartment from './Apartment.jsx'
 function ApartmentSection() {
   return (

@@ -1,0 +1,40 @@
+@use '../abstracts/variables' as *;
+
+
+.navbar {
+  display: flex;
+  align-items: center;
+  background-color: $background-light;
+  padding: 0 3rem;
+  font-weight: 500;
+  gap: 2rem;
+  margin-bottom: 2em;
+  margin-top: 2em;
+
+  & > *:first-child {
+    margin-right: auto;
+  }
+
+  & a {
+    text-decoration: none;
+    color: #000;
+    &:hover,
+    &.active {
+      color: $primary-color;
+    }
+  }
+
+  &__logo--img {
+    @media screen and (max-width: 768px) {
+      width: 150px;
+      height: 50px;
+    }
+  }
+
+  @media screen and (max-width: 442px) {
+    flex-wrap: wrap;
+    &__logo {
+      width: 100%;
+    }
+  }
+}

@@ -1,0 +1,17 @@
+@use '../abstracts/variables' as *;
+
+.grid {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  background: $light-grey;
+  border-radius: 2rem;
+  gap: 1rem;
+  padding: 2em;
+
+  @media screen and (max-width: 768px) {
+    justify-content: center;
+    background-color: $background-light;
+    padding: 0;
+  }
+}

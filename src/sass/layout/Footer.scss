@@ -1,9 +1,11 @@
+@use '../abstracts/variables' as *;
+
 .footer {
-  background-color: black;
+  background-color: $background-dark;
   padding: 20px 0;
   min-height: 150px;
   text-align: center;
-  color: white;
+  color: $secondary-color;
   font-size: 14px;
   display: flex;
   flex-direction: column;

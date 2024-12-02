@@ -1,10 +1,10 @@
 import React from "react";
-import "../sass/Apartment.scss";
+import "../sass/components/Apartment.scss";
 import { NavLink } from "react-router-dom";
 function Apartment() {
   return (
     <div className="apartment-card">
-      <NavLink to={"/apartment"}>
+      <NavLink to="/apartment">
         <div className="apartment-card__title">Titre de la <br /> location </div>
       </NavLink>
     </div>
