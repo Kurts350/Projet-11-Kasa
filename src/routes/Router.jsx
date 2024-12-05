@@ -1,11 +1,12 @@
 import React from 'react';
 import { createBrowserRouter, Outlet } from "react-router-dom";
-import Navbar from "../layout/Navbar";
-import Footer from "../layout/Footer";
-import Main from "../layout/Main";
-import HomePage from "../pages/HomePage";
-import ApartmentPage from '../pages/ApartmentPage';
-import About from '../pages/About'; 
+import {Navbar} from "../layout/Navbar";
+import {Footer} from "../layout/Footer";
+import {Main} from "../layout/Main";
+import {HomePage} from "../pages/HomePage";
+import {ApartmentPage} from '../pages/ApartmentPage';
+import {About} from '../pages/About'; 
+import {ErrorPage404} from "../pages/ErrorPage404";
 
 const Layout = () => {
   return (
@@ -22,7 +23,7 @@ const Layout = () => {
 const router = createBrowserRouter([
   {
     element: <Layout />,
-    errorElement: <h1>404</h1>,
+    errorElement: <ErrorPage404 />,
     children: [
       {
         path: "/",
@@ -40,4 +41,4 @@ const router = createBrowserRouter([
   },
 ]);
 
-export default router;
+export {router};

@@ -1,12 +1,21 @@
-import React from 'react'
-import Banner from '../components/Banner'
-
+import React from "react";
+import {DescriptionPanel} from "../components/DescriptionPanel";
+import "../sass/components/DescriptionPanel.scss";
+import "../sass/pages/About.scss";
+import {ImageBanner} from "../components/ImageBanner";
+import AboutBanner from "../assets/aboutbanner.png";
 function About() {
   return (
     <>
-      <Banner />
+      <ImageBanner src={AboutBanner} />
+      <div className="about__container">
+        <DescriptionPanel />
+        <DescriptionPanel />
+        <DescriptionPanel />
+        <DescriptionPanel />
+      </div>
     </>
-  )
+  );
 }
 
-export default About
+export {About};

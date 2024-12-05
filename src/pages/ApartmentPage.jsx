@@ -1,20 +1,21 @@
 import React from "react";
 import "../sass/pages/ApartmentPage.scss";
-import ApartmentDescription from "../components/ApartmentDescription";
-import ApartmentBanner from "../components/ApartmentBanner";
-import ApartmentHeader from "../components/ApartmentHeader";
+import {DescriptionPanel} from "../components/DescriptionPanel";
+import {ApartmentHeader} from "../components/ApartmentHeader";
+import {ImageBanner} from "../components/ImageBanner";
+import apartmentpage from "../assets/apartment-page.png";
 
 function ApartmentPage() {
   return (
     <div className="apartment">
-      <ApartmentBanner />
+      <ImageBanner src={apartmentpage} />
       <ApartmentHeader />
       <div className="apartment__description--area">
-        <ApartmentDescription />
-        <ApartmentDescription />
+        <DescriptionPanel />
+        <DescriptionPanel />
       </div>
     </div>
   );
 }
 
-export default ApartmentPage;
+export {ApartmentPage};

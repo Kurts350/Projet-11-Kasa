@@ -32,4 +32,4 @@ function ApartmentHeader() {
   )
 }
 
-export default ApartmentHeader
+export {ApartmentHeader}

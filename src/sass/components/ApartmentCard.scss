@@ -1,0 +1,31 @@
+@use "../abstracts/variables" as *;
+
+a {
+  text-decoration: none;
+  .apartment-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    height: 340px;
+    width: 340px;
+    border-radius: 1rem;
+    background-image: linear-gradient(to top, $dark-red, $primary-color);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    // background-image: url("https://picsum.photos/200/200");
+    background-size: cover;
+
+    @media screen and (max-width: 768px) {
+      flex-basis: 100%;
+      margin-bottom: 1rem;
+    }
+
+    &__title {
+      font-size: 1.2rem;
+      font-weight: 700;
+      margin-block-end: 0.5em;
+      margin-inline-start: 0.5em;
+      color: $secondary-color;
+      text-decoration: none;
+    }
+  }
+}

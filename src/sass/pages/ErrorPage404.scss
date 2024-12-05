@@ -1,0 +1,42 @@
+@use "../abstracts/variables" as *;
+
+.error-page {
+  font-family: "Montserrat", sans-serif;
+  margin: 0;
+  padding: 0;
+  h1 {
+    font-size: 288px;
+    width: 100%;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 6rem;
+    @media screen and (max-width: 768px) {
+      font-size: 144px;
+      
+    }
+  }
+  h2 {
+    font-size: 36px;
+    text-align: center;
+    font-weight: 500;
+    margin-top: 0;
+    margin-bottom: 6rem;
+    @media screen and (max-width: 768px) {
+      font-size: 24px;
+    }
+
+  }
+  color: $primary-color;
+  a div{
+    text-decoration: underline; 
+    color: $tertiary-color;
+    text-align: center;
+    font-size: 18px;
+    margin-top: 0;
+    margin-bottom: 6rem;
+    @media screen and (max-width: 768px) {
+      font-size: 16px;
+    }
+
+  }
+}

@@ -1,15 +1,16 @@
-import React from 'react'
-import '../sass/components/ApartmentSection.scss'
-import Apartment from './Apartment.jsx'
+import React from "react";
+import "../sass/components/ApartmentSection.scss";
+import {ApartmentCard} from "./ApartmentCard.jsx";
+
 function ApartmentSection() {
   return (
-    <div className='grid'>
-      <Apartment />
-      <Apartment />
-      <Apartment />
-      <Apartment />
+    <div className="grid">
+      <ApartmentCard />
+      <ApartmentCard />
+      <ApartmentCard />
+      <ApartmentCard />
     </div>
-  )
+  );
 }
 
-export default ApartmentSection
+export { ApartmentSection };

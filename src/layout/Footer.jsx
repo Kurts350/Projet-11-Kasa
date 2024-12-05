@@ -1,6 +1,7 @@
 import React from "react";
 import "../sass/layout/Footer.scss";
 import logo from "../assets/logo-footer.png";
+
 function Footer() {
   return (
     <div className="footer">
@@ -12,4 +13,4 @@ function Footer() {
   );
 }
 
-export default Footer;
+export {Footer};

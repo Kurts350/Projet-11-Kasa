@@ -1,7 +1,8 @@
 import React from "react";
-import Banner from "../components/Banner.jsx";
-import ApartmentSection from "../components/ApartmentSection.jsx";
+import {Banner} from "../components/Banner.jsx";
+import {ApartmentSection} from "../components/ApartmentSection.jsx";
 import "../sass/pages/HomePage.scss";
+
 function HomePage() {
   return (
     <>
@@ -11,4 +12,4 @@ function HomePage() {
   );
 }
 
-export default HomePage;
+export {HomePage};

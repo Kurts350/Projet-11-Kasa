@@ -5,13 +5,14 @@
   display: flex;
   align-items: center;
   background-color: $background-light;
-  padding: 0 3rem;
+  padding: 0 3em;
   font-weight: 500;
   gap: 2rem;
   margin-bottom: 2em;
   margin-top: 2em;
   @media screen and (max-width: 768px) {
-    text-transform: uppercase;    
+    text-transform: uppercase;  
+    padding: 0 1em;  
   }
 
   & > *:first-child {
@@ -21,6 +22,11 @@
   & a {
     text-decoration: none;
     color: #000;
+    font-size: 1.5rem;
+    @media screen and (max-width: 768px) {
+      font-size: 1rem;
+      
+    }
     &:hover,
     &.active {
       color: $primary-color;
@@ -29,13 +35,12 @@
 
   &__logo--img {
     @media screen and (max-width: 768px) {
-      width: 150px;
-      height: 50px;
+      width: 100px;
+      height: 30px;
     }
   }
 
   @media screen and (max-width: 768px) {
-    flex-wrap: wrap;
     &__logo {
       width: 100%;
     }
