@@ -16,8 +16,10 @@ function ApartmentSection() {
     <div className="grid">
       {apartments.map((apartment) => (
         <ApartmentCard 
-        title={apartment.title}
-        imageUrl={apartment.cover}/>
+        key={apartment.id}
+        id={apartment.id}
+        title={apartment.title} 
+        imageUrl={apartment.cover} />
       ))}
     </div>
   );

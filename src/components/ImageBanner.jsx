@@ -1,10 +1,10 @@
 import React from "react";
 import "../sass/components/ImageBanner.scss";
 
-function ImageBanner({ src }) {
+function ImageBanner(props) {
   return (
     <div className="image__banner">
-      <img src={src} alt="" />
+      <img src={props.imageUrl} alt="" />
     </div>
   );
 }

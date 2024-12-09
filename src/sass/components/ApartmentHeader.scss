@@ -36,11 +36,10 @@
         text-align: end;
         font-weight: 400;
       }
-      .apartment__owner--badge {
+      .apartment__owner--badge img {
         height: 64px;
         width: 64px;
         border-radius: 50%;
-        background-color: $dark-grey;
       }
     }
     .apartment__owner--stars {
@@ -48,6 +47,7 @@
       gap: 0.5rem;
       justify-content: center;
       margin-top: auto;
+      color: $dark-grey;
       @media screen and (max-width: 768px) {
         order: 1;
         margin: 0;
@@ -58,9 +58,6 @@
       }
       .full {
         color: $primary-color;
-      }
-      .empty {
-        color: $dark-grey;
       }
     }
   }
@@ -83,7 +80,7 @@
   }
   .apartment__tags {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(100px, 150px));
+    grid-template-columns: repeat(auto-fill, minmax(100px, 18%));
     gap: 1rem;
     span {
       background-color: $primary-color;
@@ -92,7 +89,11 @@
       padding: 0.3em 2em;
       border-radius: 0.7rem;
       text-align: center;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
     }
+
     @media screen and (max-width: 768px) {
       margin-bottom: 1em;
     }
