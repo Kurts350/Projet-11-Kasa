@@ -5,6 +5,7 @@
   justify-content: space-between;
   margin-bottom: 1rem;
   gap: 3rem;
+  overflow: hidden;
 
   @media screen and (max-width: 768px) {
     flex-direction: column;
@@ -34,6 +35,10 @@
     i {
       font-size: 30px;
       cursor: pointer;
+      transition: transform 0.5s ease-in-out;
+      &.rotate {
+        transform: rotate(180deg);
+      }
     }
   }
   .description__content {
@@ -44,5 +49,18 @@
     border-radius: 1rem;
     position: relative;
     top: -1rem;
+    transition: all 0.3s ease-in-out;
+    overflow: hidden;
+    &.show {
+      max-height: 500px;
+      opacity: 1;
+      padding: 1.5rem;
+    }
+    
+    &.hide {
+      max-height: 0;
+      opacity: 0;
+      padding: 0 1em;
+    }
   }
 }

@@ -12,10 +12,10 @@ function Navbar() {
         </div>
       </NavLink>
       <NavLink to="/">
-        <div>Accueil</div>
+        Accueil
       </NavLink>
       <NavLink to="/about">
-        <div>À propos</div>
+        À propos
       </NavLink>
     </nav>
   )
